@@ -1,0 +1,36 @@
+.advantage-list {
+  display: flex;
+  margin: 0;
+}
+
+.advantage-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantage-title {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.advantage-text {
+  @include font(null, 14px, 1.71, 0.03em);
+}
+
+.advantage-container {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  display: flex;
+  background-color: var(--filter-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.advantage-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--filter-color);
+}

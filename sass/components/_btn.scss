@@ -1,0 +1,69 @@
+.hero-btn {
+  @include font(700, 16px, 1.88, 0.06em);
+  color: var(--secondary-color);
+  background: var(--web-color);
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  display: inline-block;
+  align-items: center;
+  padding: 10px 32px;
+  min-width: 200px;
+  &:hover,
+  &:focus {
+    color: var(--web-color);
+    background-color: var(--filter-color);
+  }
+}
+
+.btn-filter {
+  @include font(500, 16px, 1.63, 0.03em);
+  font-family: 'Roboto';
+  text-align: center;
+  color: var(--main-color);
+  cursor: pointer;
+  background-color: var(--filter-color);
+  border-radius: 4px;
+  border: 0 solid transparent;
+  padding: 6px 22px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &focus {
+    color: var(--filter-color);
+    background-color: var(--web-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+.subscribe__button {
+  @include font(700, 16px, 1.88, null);
+  padding: 10px 29px;
+  margin-left: 12px;
+  font-family: 'Roboto';
+  font-style: normal;
+  width: 200px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-radius: 4px;
+  cursor: pointer;
+  border-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.modal-send-btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+}

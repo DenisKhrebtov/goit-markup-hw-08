@@ -1,0 +1,46 @@
+:root {
+  --web-color: #2196f3;
+  --btn-color: #188ce8;
+  --filter-color: #f5f4fa;
+  --main-color: #212121;
+  --secondary-color: #ffffff;
+  --text-color: #757575;
+  --background-color: #2f303a;
+  --studio-color: #000000;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
