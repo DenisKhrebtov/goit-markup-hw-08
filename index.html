@@ -22,12 +22,20 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__container container">
+        <a class="logo link" href="./index.html">
+          Web<span class="logo__accent">Studio</span></a
+        >
+        <button
+          type="button"
+          class="mob-menu__btn--open mob-menu__btn js-open-menu"
+        >
+          <svg class="mob-menu__icon">
+            <use href="./images/sprites.svg#icon-menu-open"></use>
+          </svg>
+        </button>
         <nav class="nav">
-          <a class="logo link" href="./index.html">
-            Web<span class="logo__accent">Studio</span></a
-          >
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link link nav__link--current" href="./index.html"
@@ -42,7 +50,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact">
+        <ul class="contact list">
           <li class="contact__item">
             <a class="contact__link link" href="mailto:info@devstudio.com">
               <svg class="contact__icon" width="16" height="12">
@@ -61,7 +69,97 @@
           </li>
         </ul>
       </div>
-    </header> -->
+      <!-- Мобилка -->
+      <div class="mob-menu js-menu-container">
+        <div class="container mob-menu__container">
+          <button
+            type="button"
+            class="mob-menu__btn--close mob-menu__btn js-close-menu"
+          >
+            <svg class="mob-menu__icon">
+              <use href="./images/sprites.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <nav class="mob-navigation">
+            <ul class="mob-navigation__list list">
+              <li class="mob-navigation__item">
+                <a
+                  href="./index.html"
+                  class="mob-navigation__link mob-navigation__link--current link"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-navigation__item">
+                <a href="./portfolio.html" class="mob-navigation__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-navigation__item">
+                <a href="" class="mob-navigation__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mob-menu-bottom">
+            <ul class="mob-contacts list">
+              <li class="mob-contacts__item">
+                <a
+                  href="tel:+380961111111"
+                  class="mob-contacts__link mob-contacts__link--tel link"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-contacts__link mob-contacts__link--mail link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mob-soc-networks list">
+              <li class="mob-soc-networks__item">
+                <a
+                  href=""
+                  class="mob-soc-networks__link link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Instagram
+                </a>
+              </li>
+              <li class="mob-soc-networks__item">
+                <a
+                  href=""
+                  class="mob-soc-networks__link link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Twitter
+                </a>
+              </li>
+              <li class="mob-soc-networks__item">
+                <a
+                  href=""
+                  class="mob-soc-networks__link link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >Facebook
+                </a>
+              </li>
+              <li class="mob-soc-networks__item">
+                <a
+                  href=""
+                  class="mob-soc-networks__link link"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  >LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <!--Герой-->
     <main>
       <section class="hero">
@@ -73,7 +171,7 @@
         </div>
       </section>
       <!-- Приемущества -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="advantage-list list">
@@ -131,9 +229,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Возможности -->
-      <!-- <section class="section opportunity">
+      <section class="section opportunity">
         <div class="container">
           <h2 class="opportunity-text">Чем мы занимаемся</h2>
           <ul class="opportunity-list list">
@@ -159,9 +257,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Команда -->
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="team__title link">Наша команда</h2>
           <ul class="team__list list">
@@ -315,9 +413,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Клиенты -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="client-text">Постоянные клиенты</h2>
           <ul class="client-list list">
@@ -359,10 +457,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="container-footer">
           <div class="container-adress">
@@ -443,7 +541,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -533,6 +631,7 @@
         </form>
       </div>
     </div>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
