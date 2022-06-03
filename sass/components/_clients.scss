@@ -2,12 +2,12 @@
   @include font(700, 28px, 1.18, 0.03em);
   @media screen and (min-width: 1200px) {
     @include font(null, 36px, 1.17, null);
+    margin-bottom: 50px;
   }
   font-family: 'Roboto';
   text-align: center;
-  margin: 0 auto;
+  margin-bottom: 30px;
   color: var(--main-color);
-  margin-bottom: 50px;
 }
 
 .client-list {

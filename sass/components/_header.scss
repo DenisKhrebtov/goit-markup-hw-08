@@ -58,23 +58,21 @@
   &:focus {
     color: var(--web-color);
   }
-  &--current::after {
-    content: '';
-    width: 100%;
-    height: 4px;
+  &--current {
+    color: var(--web-color);
+    &::after {
+      content: '';
+      width: 100%;
+      height: 4px;
 
-    position: absolute;
-    display: block;
-    background-color: var(--web-color);
-    border-radius: 2px;
-    bottom: -1px;
+      position: absolute;
+      display: block;
+      background-color: var(--web-color);
+      border-radius: 2px;
+      bottom: -1px;
+    }
   }
 }
-
-// .header .container {
-//   display: flex;
-//   align-items: center;
-// }
 
 .contact {
   @media screen and (max-width: 767px) {

@@ -1,19 +1,14 @@
-.filter__box {
-  margin-bottom: 40px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
-  }
-}
-
 .filter {
   display: flex;
   flex-wrap: wrap;
   column-gap: 8px;
   row-gap: 15px;
+  margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
