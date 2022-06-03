@@ -22,11 +22,15 @@
 .logo {
   // margin-right: 93px;
   font-family: 'Raleway';
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.17, 0.03em);
   color: var(--web-color);
   @media screen and (max-width: 767px) {
+    @include font(700, 24px, 1.17, 0.03em);
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(null, 26px, 1.19, null);
   }
 }
 
@@ -104,8 +108,11 @@
 }
 
 .contact__link {
-  @include font(500, 14px, 1.14, 0.02em);
+  @include font(500, 12px, 1.17, 0.02em);
   color: var(--text-color);
+  @media screen and (min-width: 1200px) {
+    @include font(500, 14px, 1.14, 0.02em);
+  }
 
   display: flex;
   align-items: center;
